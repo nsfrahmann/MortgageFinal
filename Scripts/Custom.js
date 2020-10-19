@@ -320,7 +320,7 @@ detailButton.addEventListener("click", () => {
     d1.adjust("days", 1);
     // Set end date
     let d2 = new Date();
-    d2.adjust("months", termInMonths);
+    d2.adjust("months", termInMonths + 1);
     // Set output letiable to push to our dateArray
     let output = "";
     let output2 = "";

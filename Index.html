@@ -1,0 +1,416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- START: Head-->
+<head>
+    <meta charset="UTF-8">
+    <title>Dragon Mortgage</title>
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- START: Template CSS-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/jquery-ui.min.css" rel="stylesheet" />
+    <link href="Content/jquery-ui.theme.min.css" rel="stylesheet" />
+    <link href="Content/simple-line-icons.css" rel="stylesheet" />
+
+    <!-- END Template CSS-->
+    <!-- START: Custom CSS-->
+    <link href="Content/main.css" rel="stylesheet" />
+    <link href="Content/Custom.css" rel="stylesheet" />
+    <!-- END: Custom CSS-->
+    <!--START: CDNjs-->
+
+
+</head>
+<!-- END Head-->
+<!-- START: Body-->
+<body style="overflow-x:hidden;">
+    <!-- START: Pre Loader-->
+    <div class="se-pre-con">
+        <div class="loader"></div>
+    </div>
+    <!-- END: Pre Loader-->
+    <!--NAVBAR-->
+    <div class="header fixed-top">
+        <nav class="site-width">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white navShadow" id="mainNav">
+                <div class=" h4 mb-0 text-left">
+                    <a href="index.html" class="horizontal-logo text-left" style="padding-left: .5rem;">
+                        <img src="Images/dragonfavicon.png" height="50px" width="50px" />
+                    </a>
+                    <span class="h4 font-weight-bold justify-content-center mb-0 scale2" style="color: #000000">Dragon Mortgage</span>
+                </div>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+                <div class=" collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto " style="margin-right: 15rem">
+                        <li class="navbar-item myBold dropdown">
+                            <a class="dropdown-toggle nav-link js-scroll-trigger" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Explore
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#calculator">Calculator</a>
+                                <a class="dropdown-item" href="#formulas">Formulas</a>
+                            </div>
+                        </li>
+                        <li class="nav-item myBold">
+                            <a class="nav-link js-scroll-trigger" href="#code">Git</a>
+                        </li>
+                        <li class="nav-item myBold">
+                            <a class="nav-link js-scroll-trigger" href="//dragon-nates-site.netlify.app" target="_blank">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+    </div>
+    <!--END NAVBAR-->
+    <!--START LANDING-->
+    <section style="background: linear-gradient(to top, #ffffff, #1055f7); height:150vh">
+
+        <div class="container h-50">
+            <div class="row h-100">
+                <div class="col-lg-6 my-auto">
+                    <div class="card niceCard" style="border-radius: 5rem; text-align: center; background-color: #101329; padding: 2rem; margin-top: 14rem; margin-bottom: 2rem">
+                        <div class="row">
+                            <div class="col-lg-12 my-auto">
+                                <img src="Images/dragonfavicon.png" />
+                            </div>
+                            <div class="col-lg-12 my-auto card-title">
+                                <h3 class="myFont white"><br />Welcome to Dragon Mortgage!</h3><br /><br />
+                                <h4 class="myFont font-italic white">We make mortgages simple,<br /> one click at a time.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <img src="Images/test.gif" class="testy" id="gif" width="100%" height="100%" />
+                </div>
+
+            </div>
+            <!--SCROLL ARROW-->
+            <div class="row" style="justify-content:center; margin-top: 5rem">
+                <h5 id="arrowText" style="color: #ffffff;">Click the arrow and we'll get you started!</h5>
+                <section class="main">
+                    <div class="container">
+                        <a class="arrow-wrap" href="#second">
+                            <span class="arrow"></span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <!--END SCROLL ARROW-->
+        </div>
+    </section>
+    <!--END LANDING-->
+    <!--START CALC SECTION-->
+    <section style="background: linear-gradient(#ffffff, #8283a0); height: 200vh">
+        <div class="container" id="second">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-7" style="margin-top: 6rem;">
+                        <div class="" id="tipCard">
+                            <div class="card niceCard" style="background-color: #ffffff; text-align: center; border-radius: 5rem; padding: 1.75rem; padding-bottom: .25rem;">
+                                <div class="card-title myDarkText">
+                                    <h1><span class="blue">1</span></h1>
+                                    <h4>Give it a try and enter some information.</h4>
+                                    <h1><span class="blue">2</span></h1>
+                                    <h4>Don't know it all? Use our slider and make some connections!</h4>
+                                    <h1><span class="blue">3</span></h1>
+                                    <h4>Won't believe it 'til you see it? Press the "Get Chart" button.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--THE CALCULATOR-->
+                    <div class="col-lg-5" style="margin-top: 11rem;">
+                        <div class="" id="calculator">
+                            <div class="niceCard myDark col-lg-12" style="border-radius: 1rem;">
+                                <h1 class="text-center pt-2 myFont white">Calculator</h1>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-11 border m-2 input-field text-center bg-white" style="border-radius: 1rem">
+                                        <input type="range"
+                                               class="custom-range"
+                                               min="50000"
+                                               max="1250000"
+                                               step="1000"
+                                               value="50000"
+                                               id="homePriceRange" />
+                                        <div class="input-group mb-3 input-field md-form">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon">Home Price</span>
+                                            </div>
+                                            <input class="form-control"
+                                                   type="text"
+                                                   id="homePrice"
+                                                   placeholder="Numbers only please..."
+                                                   value="$ 50,000" />
+
+                                        </div>
+                                        <div class="input-group mb-3 input-field md-form">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon">Down Payment</span>
+                                            </div>
+                                            <input class="form-control"
+                                                   type="text"
+                                                   id="downPayment"
+                                                   placeholder="Down Payment"
+                                                   value="$ 10,000"
+                                                   disabled />
+                                        </div>
+                                        <div class="input-group mb-3 input-field md-form">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon">Down Payment %</span>
+                                            </div>
+                                            <input class="form-control"
+                                                   type="number"
+                                                   id="dpPercentage"
+                                                   placeholder="Percentage"
+                                                   value="20" />
+                                        </div>
+                                        <div class="input-group mb-3 input-field md-form">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon">Loan Amount</span>
+                                            </div>
+                                            <input class="form-control"
+                                                   type="text"
+                                                   id="loanAmount"
+                                                   placeholder="Loan amount"
+                                                   value="$ 40,000"
+                                                   disabled />
+                                        </div>
+                                        <div class="input-group mb-3 input-field md-form">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon">Length of Loan</span>
+                                            </div>
+                                            <select class="custom-select" id="term">
+                                                <option value="10">10 Years</option>
+                                                <option value="15">15 Years</option>
+                                                <option selected value="30">30 Years</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group mb-3 input-field md-form">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon">Interest Rate</span>
+                                            </div>
+                                            <input class="form-control"
+                                                   type="number"
+                                                   id="interestRate"
+                                                   value="4"
+                                                   step=".1" />
+                                        </div>
+
+                                        <div class="input-group mb-3 input-field md-form">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon">Monthly Payment</span>
+                                            </div>
+                                            <input class="form-control"
+                                                   type="text"
+                                                   id="estimatedMonthlyPayment"
+                                                   value="$ 190"
+                                                   disabled />
+                                        </div>
+                                        <div class="input-group mb-3 input-field">
+                                            <div class="input-group-prepend input-title">
+                                                <span class="input-group-text buttonFont md-addon" id="startDateLabel">Start Date</span>
+                                            </div>
+                                            <input class="form-control" type="date" id="mortgageStartDate" />
+                                        </div>
+                                        <span class="btn btn-info buttonFont myDark d-block" data-toggle="modal" data-target="#exampleModal" id="detailsButton">
+                                            <i class="fas fa-table mr-3"></i> Details
+                                        </span>
+
+
+
+
+                                        <!--<button class="btn btn-outline-secondary mb-3 buttonFont myDark" type="button" onclick="clickLoad(); loadTime(); graphPop(); this.onclick=null;" id="myButton">-->
+                                        <!--Get Chart
+                            </button>-->
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END CALCULATOR-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Results</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="overflow: scroll;">
+
+                                    <div class="col" style="width:100%">
+                                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                            <li class="nav-item scale" role="presentation">
+                                                <span class="nav-link pointer active"
+                                                   id="home-tab"
+                                                   data-toggle="tab"
+                                                   href="#schedule"
+                                                   role="tab"
+                                                   aria-controls="schedule"
+                                                   aria-selected="true">Amortization Schedule</span>
+                                            </li>
+                                            <li class="nav-item scale" role="presentation">
+                                                <span class="nav-link pointer"
+                                                   id="schedule-tab"
+                                                   data-toggle="tab"
+                                                   href="#amoChart"
+                                                   role="tab"
+                                                   aria-controls="amoChart"
+                                                   aria-selected="false">Amortization Chart</span>
+                                            </li>
+                                            <li class="nav-item scale" role="presentation">
+                                                <span class="nav-link pointer"
+                                                   id="pdf-tab"
+                                                   data-toggle="tab"
+                                                   role="tab"
+                                                   href="#pdf"
+                                                   aria-controls="pdf"
+                                                   aria-selected="false">Download PDF</span>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active"
+                                                 id="schedule"
+                                                 role="tabpanel"
+                                                 aria-labelledby="schedule-tab">
+                                                <div class="tableContainer scale">
+                                                    <table id="calculatedTable">
+                                                        <thead>
+                                                        <th scope="col">Date</th>
+                                                        <th scope="col">Balance</th>
+                                                        <th scope="col">Monthly Payment</th>
+                                                        <th scope="col">Principal paid</th>
+                                                        <th scope="col">Interest paid</th>
+                                                        <th scope="col">Principal to Date</th>
+                                                        <th scope="col">Interest to Date</th>
+                                                        </thead>
+                                                        <tbody id="tableBody"></tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="tab-pane fade"
+                                                 id="amoChart"
+                                                 role="tabpanel"
+                                                 aria-labelledby="amoChart-tab">
+                                                <canvas id="tableInfo"></canvas>
+                                            </div>
+                                            <div class="tab-pane fade"
+                                                 id="pdf"
+                                                 role="tabpanel"
+                                                 aria-labelledby="pdf-tab">
+                                                <p class="lead m-5 text center">
+                                                    Please make sure you hit 'Details' before attempting to
+                                                    download.
+                                                </p>
+                                                <button onclick="savePdf()" class="btn btn-info btn-block">
+                                                    Download Doc
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            <!--THE CHART-->
+                            <div class="row">
+                                <div class="col-lg-12" style="margin-left: 15rem; margin-top: 15rem;">
+                                    <!--HIDDEN LOADER-->
+                                    <div class="loader testy3" id="load" style="display: none;"></div>
+                                    <!--END LOADER-->
+                                    <div class="testy4 col-lg-10" id="theChart" style="display: none;">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                                <h6 class="card-title">Line Chart</h6>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <div id="apex_line_chart" class="height-500"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END CHART-->
+                        </div>
+                        <!--NAVBAR ACTIVATOR-->
+                        <div style="position: relative; bottom: 100px" id="navActive"></div>
+                        <!--END ACTIVATOR-->
+</section>
+    <!--END CALC SECTION-->
+    <!--FORMULAS SECTION-->
+    <section id="formulas" style="height: 80vh; background: linear-gradient( #8283a0, #ffffff)">
+        <div class="myGrid">
+            <div class="card niceCard item1 myDark white text-left justify-content-center pl-3">
+                <h6 class="scale" style="width: 90vw">
+                    <b>Here's the magic behind the scenes:</b><br /><br />
+                    Loan = Home Price - Down Payment<br /><br />
+                    Current Balance = Loan - Principal Payment<br /><br />
+                    Principal Payment = Monthly Payment - Interest Payment<br /><br />
+                    Interest Payment = Balance x (Interest Rate / 1200)<br /><br />
+                    Your Monthly Payment = (Loan x Interest Rate / 1200) / {1 - [1 + (Interest Rate / 1200)^(-Term in Years x 12) ] }<br /><br />
+                    Home Price (with 20% Down Payment) you can get based on what you can afford monthly:<br /><br />
+                    Target Home Price = 1.25 x ( {Monthly Payment x {1 - [1 + (Interest Rate / 1200)^(-Term in years x 12) ] } ) / (Interest Rate / 1200)
+
+                </h6>
+            </div>
+            <div class="card niceCard item2 white text-center"><h4>Formulas</h4></div>
+            <div class="card niceCard item3 white text-left pt-3 pl-3">
+                <h5 style="width: 80vw">Thanks for using our app!<br /><br />If you like what you've seen please check out some more of our work!</h5>
+                <h6 style="width: 70vw" class="text-muted pt-4 scale">Credits: Denis Jojot | Charles Tincher | Nathan Frahmann</h6>
+            </div>
+        </div>
+    </section>
+    <!--END FORMULAS SECTION-->
+    <footer class="text-center bg-white h5">&copy; 2020 - Dragon Mortgage Inc. - All rights reserved.</footer>
+    <!-- END: Content-->
+    <!-- START: Back to top-->
+    <a href="#" class="scrollup text-center">
+        <i class="icon-arrow-up"></i>
+    </a>
+    <!-- END: Back to top-->
+    <!-- START: Template JS-->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <script src="Scripts/datatables.min.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/moment.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/jquery.slimscroll.min.js"></script>
+
+    <!-- END: Template JS-->
+    <!-- START: APP JS-->
+    <script src="Scripts/app.js"></script>
+    <!-- END: APP JS-->
+    <!-- START: Page Vendor JS-->
+    <!--<script src="Scripts/apexcharts.min.js"></script>
+    <script src="Scripts/apex.script.js"></script>-->
+    <!-- END: Page Vendor JS-->
+    <!-- START: jsPDF-->
+    <script src="Scripts/polyfills.es.js"></script>
+    <!--<script src="Scripts/jspdf.es.js"></script>-->
+    <script src="Scripts/html2pdf.bundle.min.js"></script>
+    <!-- END: Page Script JS-->
+    <!--Custom JS-->
+    <script src="Scripts/Custom.js"></script>
+    <!--End Custom-->
+</body>
+<!-- END: Body-->
+</html>

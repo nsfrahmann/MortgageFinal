@@ -144,7 +144,8 @@
 
 .testy {
     position: relative;
-    bottom: -3rem
+    bottom: -3rem;
+    margin-top: -30px;
 }
 
 .testy2 {
